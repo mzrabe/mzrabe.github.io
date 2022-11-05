@@ -1,2 +1,56 @@
-<h1>First Try</h1>
-Hi!
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Wetterstation Hauptzentrale</title>
+		<link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+	</head>
+	<body>
+		<h1>Windgeschwindigkeit</h1>
+		<h2>Hauptzentrale</h2>
+		<div id="div1">
+			<hr>
+			<p id="velocity">2.8 km/h</p>
+			<p class="minmaxVelocity">max: 3.7 km/h</p>
+			<p class="minmaxVelocity">min: 2.0 km/h</p>
+			<br>
+			<p class="minmaxVelocity">Windstärke (Beaufort): 1  - leichter Zug</p>
+			<p class="minmaxVelocity">Windrichtung angezeigt durch den Zug des Rauches</p>
+			<hr>
+			<p class="small">Wert der letzten 10 Minuten</p>
+			<br>
+			<p>
+				06. November 2022
+				<br>
+				00:52 Uhr
+			</p>
+			<br>
+			<hr>
+			<table id="tableAmbient">
+			<tr>
+				<th></th>	
+				<th>Temperatur</th>
+				<th>Luftdruck</th>
+				<th>rel. Luftfeuchte</th>
+			</tr>
+			<tr>
+				<td>Hauswand</td>
+				<td>6.81 °C</td>
+				<td rowspan="3">1012.84 hPa</td>
+				<td>78.21 %</td>
+			</tr>
+			<tr>
+				<td>Station</td>
+				<td>1.90 °C</td>
+				<td>99.60 %</td>
+			</tr>
+			</table>
+		</div><br><br>
+		<div>
+			<img src="/static/windChart.png" alt="- last 24 hours wind velocity chart -">
+		</div><br>
+		<div>
+			<img src="/static/groupChart.png" alt="- last 24 hours data chart -">
+		</div>
+	</body>
+</html>
